@@ -1,7 +1,7 @@
 Applcation is for calculating fizz buzz game(http://codingdojo.org/cgi-bin/index.pl?KataFizzBuzz). 
 App is implemented using spring-data-elastic search, java 8 lambdas requirements.
 
-Solution is provided in the form of maven (http://maven.apache.org/download.cgi) project. 
+Solution is provided in the form of maven (http://maven.apache.org/download.cgi) project. Maven installation is required for building and executing application.
 
 Application is developed by Java 1.8 language. As a consequence, execution of this application requires the JRE 8 install  (http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-1880261.html)
 
