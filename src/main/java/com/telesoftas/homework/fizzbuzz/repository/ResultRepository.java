@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 import com.telesoftas.homework.fizzbuzz.entity.Result;
 
 @Repository
-public interface ResultRepository extends ElasticsearchRepository<Result, Integer> {
-}
+public interface ResultRepository extends ElasticsearchRepository<Result, Integer> {}

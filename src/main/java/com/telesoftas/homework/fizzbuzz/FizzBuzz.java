@@ -42,5 +42,9 @@ public class FizzBuzz {
     public List<Result> getResults() {
         return results;
     }
+
+    public DataService getDataService() {
+        return dataService;
+    }
     
 }

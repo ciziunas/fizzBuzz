@@ -2,6 +2,7 @@ package com.telesoftas.homework.fizzbuzz.service;
 
 import java.util.List;
 
+import org.elasticsearch.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -24,6 +25,10 @@ public class DataServiceImpl implements DataService {
             System.out.println("");
         }
         System.out.println("Saving results to DB completed");
+    }
+    
+    public List<Result> findAll() {
+        return Lists.newArrayList(resultRepository.findAll());
     }
 
 }

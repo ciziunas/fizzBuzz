@@ -7,4 +7,6 @@ import com.telesoftas.homework.fizzbuzz.entity.Result;
 public interface DataService {
 
     public void save(List<Result> results);
+    
+    public List<Result> findAll();
 }
