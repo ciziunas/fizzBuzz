@@ -47,6 +47,7 @@ public class Result implements Comparable<Result> {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
+        result = prime * result + ((number == null) ? 0 : number.hashCode());
         result = prime * result + ((this.result == null) ? 0 : this.result.hashCode());
         return result;
     }
@@ -60,6 +61,11 @@ public class Result implements Comparable<Result> {
         if (getClass() != obj.getClass())
             return false;
         Result other = (Result) obj;
+        if (number == null) {
+            if (other.number != null)
+                return false;
+        } else if (!number.equals(other.number))
+            return false;
         if (result == null) {
             if (other.result != null)
                 return false;
@@ -70,7 +76,6 @@ public class Result implements Comparable<Result> {
 
     @Override
     public int compareTo(Result o) {
-        // TODO Auto-generated method stub
         return this.getNumber() - o.getNumber();
     }
     

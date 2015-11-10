@@ -44,7 +44,6 @@ public class FizzBuzzServiceImplTest {
 
         // WHEN fizzBuzzService executed
         List<Result> results = testee.countFizzBuzz(participants);
-        System.out.println(results.size());
 
         // THEN expected result list is equal to results returned from service
         // THEN result list size is equal to 0
